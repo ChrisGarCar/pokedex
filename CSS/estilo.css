@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+}
+
+body{
+    background-color: #03898a;
+}
+header{
+    background-color: #067777;
+    display: flex;
+    width: 100%;
+}
+.imagentitulo{
+    padding: 1%;
+}
+.Titulo{
+    margin-top: 1.5%;
+}
+.pokedex{
+    font-style: normal;
+}
+#fotoPokemon{
+    border-radius: 10%;
+    margin: auto;
+}
+.Contenido{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+.primera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Container{
+    flex-basis: 50%;
+}
+.PokeInput{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.nombrePokemon{
+    border: 0;
+    font-size: 250%;
+    border-radius: 10px;
+    background-color: #55ab62;
+    color: black;
+    width: 100%;
+}
+.buscador{
+    margin-right: 5%;
+}
+.buscar{
+    border-radius: 50px ;
+    width: 57px;
+    height: 57px;
+    border: 0;
+    background-color: #55ab62;
+    cursor: pointer;
+}
+#nombreytipos{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+.Name{
+    background-color: rgba(187,48,45,.82);
+    padding: 5px;
+    border-radius: 15px ;
+    font-size: x-large;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+[class*="type-"]{
+    font-size: x-large;
+    padding: 5px;
+    border-radius: 15px;
+}
+#Número{
+    background-color: rgba(187,48,45,.82);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: x-large;
+    display: none;
+}
+#Stats{
+    display: none;
+    grid-template-columns: auto auto auto;
+    font-size: x-large;
+    gap: 5%;
+    margin-top: 7%;
+    background-color:rgba(190,125,183,.9);
+    padding: 10px;
+    border-radius: 15px;
+    transition: all 300ms;
+}
+#Stats:hover{
+    transform: translate(-5px, -5px);
+    cursor: pointer;
+    box-shadow: 15px 15px 0px 0px rgba(234,240,251,0.4);
+}
+.Moves{
+    display: none;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1% 2%;
+    font-size: larger;
+    margin-top: 5%;
+}
+.move{
+    background-color: rgba(190,125,183,.9);
+    padding: 2%;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+.move:hover {
+    transform: translate(-5px, -5px);
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(234,240,251,0.4);
+}
+@media (max-width: 400px){
+    .Contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .Moves{
+        display: none;
+        grid-template-columns: auto auto auto auto;
+        gap: 1% 2%;
+        font-size: larger;
+        margin-top: 5%;
+    }
+    .todo{
+        padding: 1%;
+    }
+}

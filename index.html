@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<section class="todo">
+    <body>
+        <header id="header" class="header">
+            <img class="imagentitulo" src="Imagenes/pokeballtitulo.png" alt="pokeball" width="45">
+            <h2 class="Titulo">
+                <span class="typed"></span>
+            </h2>
+            <div class="Titulo" id="CadenaTitulo">
+                <p><i class="pokedex">POKÉDEX</i></p>
+            </div>
+        </header>
+        <section class="Contenido">
+            <div id="Container" class="primera">
+                <div class="PokeInput">
+                    <div class="buscador" id="buscador">
+                        <input type="text" class="nombrePokemon" id="nombrePokemon" name="NombrePokemon" placeholder="Pikachu" >
+                    </div>
+                    <div>
+                        <button class="buscar" onclick="fetchPokemon()"></button>
+                    </div>
+                </div>
+                <div class="nombreytipos" id="nombreytipos">
+                    <div>
+                        <div class="Name" id="Name">
+                        </div>
+                    </div>
+                    <div class="tipos" id="Tipos">
+                        <p class="Types" id="Types"></p>
+                    </div>
+                </div>
+                <div class="Foto">
+                    <img src="Imagenes/481px-Pokebola-pokeball-png-0.png" alt="pokemon" width="60%" id="fotoPokemon"><br>
+                </div>
+                <div class="pokeID">
+                    <div class="Número" id="Número">
+                        <P class="Num" id="ID"></p></P>
+                    </div>
+                </div>
+                <div class="Información" id="Información">
+                    <div class="Stats" id="Stats">
+                    </div>
+                </div>
+            </div>
+            <div id="Containe" class="segunda">
+                <div class="Moves" id="Moves">
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer>
+        <script src="js/typed.js"></script>
+        <script src="./pokedex.js"></script>
+    </footer>
+</section>
+</html>
